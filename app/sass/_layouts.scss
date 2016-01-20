@@ -1,9 +1,15 @@
 html{
 	height: 100%;
+	width: 100%;
+	min-width: 1200px;
 }
 body {
 	@extend html;
 	background-color: #fafafa;
+	font-family: 'OpenSans';
+	font-size: 14px;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
 }
 .wrapper{
 	min-height: 100%;
@@ -12,4 +18,13 @@ body {
 }
 .empty{
 	height: $footer;
+}
+.container{
+	@include clearfix();
+	width: 960px;
+	margin: auto;
+}
+.container-wide{
+	width: 1200px;
+	margin: auto; 
 }
