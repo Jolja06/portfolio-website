@@ -1,0 +1,15 @@
+html{
+	height: 100%;
+}
+body {
+	@extend html;
+	background-color: #fafafa;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.empty{
+	height: $footer;
+}

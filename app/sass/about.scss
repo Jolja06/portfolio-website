@@ -1,4 +1,7 @@
-body{
-	background: #fafafa;
-	color: #309dd0;
-}
+@import "mixins";
+@import "fonts";
+@import "variables";
+@import "layouts";
+@import "header";
+@import "main";
+@import "footer";
