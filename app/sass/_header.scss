@@ -5,3 +5,61 @@
 	border-bottom: 7px solid #ffffff;
 	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
 }
+
+.social-icon{
+	padding: 0;
+	li{
+		display: inline-block;
+		margin: 0 0 0 5px;
+	}
+}
+.link-logo{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin: -36px 0 0 0;
+	img{
+		margin: 0 0 0 9px;
+	}
+
+}
+.social{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin: -21px 0 0 0;
+}
+.social-icon-fb{
+	background-image: url(../img/sprit.png);
+	width: 42px;
+    height: 44px;
+    background-position: -151px -10px;
+    &:hover{
+		background-position: -114px -74px;
+	}
+}
+
+.social-icon-vk{
+	@extend .social-icon-fb;
+	background-position: -270px -191px;
+	&:hover{
+		background-position: -10px -255px;
+	}
+}
+
+.social-icon-tw{
+	@extend .social-icon-fb;
+	background-position: -250px -85px;
+	&:hover{
+		background-position: -208px -149px;
+	}
+
+}
+.social-icon-gh{
+	@extend .social-icon-fb;
+	background-position: -10px -149px;
+	&:hover{
+		background-position: -72px -149px;
+	}
+}

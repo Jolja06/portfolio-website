@@ -26,6 +26,11 @@
   font-weight: normal;
   font-style: normal; }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -48,16 +53,37 @@ body {
 
 .container {
   width: 960px;
-  margin: auto; }
+  margin: 35px auto; }
   .container:before, .container:after {
     content: "";
     display: table; }
   .container:after {
     clear: both; }
 
+.container-footer {
+  width: 960px;
+  margin: auto; }
+  .container-footer:before, .container-footer:after {
+    content: "";
+    display: table; }
+  .container-footer:after {
+    clear: both; }
+
 .container-wide {
   width: 1200px;
-  margin: auto; }
+  height: 100%;
+  margin: auto;
+  position: relative; }
+
+.aside {
+  float: left;
+  width: 250px;
+  margin: 0 60px 0 0; }
+
+.content-area {
+  float: left;
+  background-color: #acacac;
+  width: 650px; }
 
 .header {
   background-image: url(../img/bgheader.jpg);
@@ -65,6 +91,98 @@ body {
   height: 90px;
   border-bottom: 7px solid #ffffff;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1); }
+
+.social-icon {
+  padding: 0; }
+  .social-icon li {
+    display: inline-block;
+    margin: 0 0 0 5px; }
+
+.link-logo {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -36px 0 0 0; }
+  .link-logo img {
+    margin: 0 0 0 9px; }
+
+.social {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: -21px 0 0 0; }
+
+.social-icon-fb, .social-icon-vk, .social-icon-tw, .social-icon-gh {
+  background-image: url(../img/sprit.png);
+  width: 42px;
+  height: 44px;
+  background-position: -151px -10px; }
+  .social-icon-fb:hover, .social-icon-vk:hover, .social-icon-tw:hover, .social-icon-gh:hover {
+    background-position: -114px -74px; }
+
+.social-icon-vk {
+  background-position: -270px -191px; }
+  .social-icon-vk:hover {
+    background-position: -10px -255px; }
+
+.social-icon-tw {
+  background-position: -250px -85px; }
+  .social-icon-tw:hover {
+    background-position: -208px -149px; }
+
+.social-icon-gh {
+  background-position: -10px -149px; }
+  .social-icon-gh:hover {
+    background-position: -72px -149px; }
+
+.nav {
+  margin: 0 0 35px 0; }
+
+.nav-list, .contacts-list {
+  box-sizing: border-box; }
+
+.nav-item {
+  padding: 18px 25px;
+  font-family: "OpenSans-Semibold";
+  font-size: 20px;
+  color: #727070;
+  background: -webkit-linear-gradient(top, white 0%, #fbf9f9 6%, #e9e6e5 100%);
+  background: linear-gradient(to bottom, white 0%, #fbf9f9 6%, #e9e6e5 100%); }
+  .nav-item.active {
+    background: -webkit-linear-gradient(top, #7ee8cd 0%, #3eb799 100%);
+    background: linear-gradient(to bottom, #7ee8cd 0%, #3eb799 100%);
+    color: #1e7465; }
+  .nav-item:hover {
+    -webkit-transition: background linear .5s, color linear .5s;
+    transition: background linear .5s, color linear .5s;
+    background: -webkit-linear-gradient(top, #e8e7e7 0%, #e3e1e1 13%, #c2c0c0 100%);
+    background: linear-gradient(to bottom, #e8e7e7 0%, #e3e1e1 13%, #c2c0c0 100%);
+    color: #727070; }
+
+.contacts-list {
+  background-color: #ffffff; }
+
+.contacts-item-name {
+  padding: 18px 25px;
+  font-family: "OpenSans-Semibold";
+  font-size: 20px;
+  border-radius: 3px 3px 0 0;
+  background: -webkit-linear-gradient(top, #f4cd80 0%, #f4cd80 10%, #dbb15c 100%);
+  background: linear-gradient(to bottom, #f4cd80 0%, #f4cd80 10%, #dbb15c 100%);
+  color: #d0982c; }
+
+.contacts-item {
+  padding: 10px 20px;
+  background: -webkit-linear-gradient(top, rgba(251, 249, 249, 0) 0%, rgba(233, 231, 231, 0.45) 100%);
+  background: linear-gradient(to bottom, rgba(251, 249, 249, 0) 0%, rgba(233, 231, 231, 0.45) 100%);
+  font-size: 14px;
+  color: #727070; }
+  .contacts-item:hover {
+    -webkit-transition: background linear .5s, color linear .5s;
+    transition: background linear .5s, color linear .5s;
+    background: -webkit-linear-gradient(top, rgba(251, 249, 249, 0) 0%, rgba(224, 196, 145, 0.45) 100%);
+    background: linear-gradient(to bottom, rgba(251, 249, 249, 0) 0%, rgba(224, 196, 145, 0.45) 100%); }
 
 .footer {
   height: 60px;

@@ -1,0 +1,50 @@
+.nav{
+	margin: 0 0 35px 0;
+}
+.nav-list{
+	box-sizing: border-box;
+}
+.nav-item{
+	padding: 18px 25px;
+	font-family: "OpenSans-Semibold";
+	font-size: 20px;
+	color: $color;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,249,249,1) 6%, rgba(233,230,229,1) 100%);
+	
+	&.active{
+		background: linear-gradient(to bottom, rgba(126,232,205,1) 0%, rgba(62,183,153,1) 100%);
+		color: $activNavColor;
+
+	}
+	&:hover{
+		transition: background linear .5s, color linear .5s;
+		background: linear-gradient(to bottom, rgba(232,231,231,1) 0%, rgba(227,225,225,1) 13%, rgba(194,192,192,1) 100%);
+		color: $color;
+		
+	}
+	
+}
+.contacts-list{
+	@extend .nav-list;
+	background-color: #ffffff;
+}
+.contacts-item-name{
+	padding: 18px 25px;
+	font-family: "OpenSans-Semibold";
+	font-size: 20px;
+	border-radius: 3px 3px 0 0;
+	background: linear-gradient(to bottom, rgba(244,205,128,1) 0%, rgba(244,205,128,1) 10%, rgba(219,177,92,1) 100%);
+	color: #d0982c;
+}
+.contacts-item{
+	padding: 10px 20px;
+	background: linear-gradient(to bottom, rgba(251,249,249,0) 0%, rgba(233,231,231,0.45) 100%);
+	font-size: 14px;
+	color: $color;
+
+	&:hover{
+		transition: background linear .5s, color linear .5s;
+		background: linear-gradient(to bottom, rgba(251,249,249,0) 0%, rgba(224,196,145,0.45) 100%);
+
+	}
+}
