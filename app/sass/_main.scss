@@ -14,8 +14,8 @@
 .nav-item{
 	font-family: "OpenSans-Semibold";
 	font-size: 20px;
-	// color: $color;
-	// text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+	color: $color;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
 	background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,249,249,1) 6%, rgba(233,230,229,1) 100%);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
     
@@ -138,7 +138,7 @@ h1{
 	box-sizing: border-box;
 	float: left;
 	width: 230px;
-	padding: 0 0 0 42px;
+	padding: 10px 0 0 42px;
 }
 .photo-box{
 	box-sizing: border-box;
@@ -154,26 +154,28 @@ h1{
 }
 .about-me-description{
 	box-sizing: border-box;
-	float: left;
+	//float: left;
+	margin-left: 230px;
 	width: 420px;
 	padding: 0 42px 0 0;
 	color: $color;
 }
-.about-me-description-list :last-child{
-	padding: 10px 0 0 0;
-}
+
 .about-me-description-list span {
 	font-family: "OpenSans"
 }
 .about-me-description-list li{
 	line-height: 25px;
 }
+
 .description{
 	@extend .about-me;
-	padding: 30px 42px;
+	padding: 47px 42px 20px 42px;
+	line-height: 21px;
+	font-size: 14px;
 }
 .description-list li{
- 	margin-left: 90px;
+ 	margin-left: 97px;
 }
 
 .description-list span {
@@ -186,15 +188,15 @@ h1{
 	border-bottom: 1px solid #dbdbda;
 	box-shadow: 0px 1px 1px 0px rgba(251, 251, 251, 0.75);
 	border-radius: 1px;
-	margin: 10px 0 10px -90px;
+	margin: 25px 0 25px -97px;
 }
-.description-list li:last-child:after {
+ .description-list li:last-child:after {
 	content: " ";
 	display: block;
 	border-bottom: none;
 	box-shadow: none;
-
-}
+	padding-bottom: 0px
+} 
 .description-list li:before{
 	content: "";
 	width: 54px;
@@ -207,20 +209,63 @@ h1{
 li.case:before{
 	 background-image: url(../img/sprit.png);
 	 background-position: -40px -10px;
-	 margin-left: -90px;
+	 margin-left: -97px;
+	 margin-top: -7px;
 }
-li.school:before{
-	 background-image: url(../img/sprit.png);
-	 background-position: -252px -10px;
-	 margin-left: -90px;
+li{
+	&.school:before{
+		@extend li.case:before;
+		background-position: -252px -10px;
+	}
+	&.graduate:before{
+		@extend li.case:before;
+		background-position: -134px -149px;
+	}
+	&.file:before{
+		@extend li.case:before;
+		background-position: -176px -74px;
+	}
 }
-li.graduate:before{
-	 background-image: url(../img/sprit.png);
-	 background-position: -134px -149px;
-	 margin-left: -90px;
+.skill{
+	padding-top: 10px;
+	float: left;
 }
-li.file:before{
-	 background-image: url(../img/sprit.png);
-	background-position: -176px -74px;
-	 margin-left: -90px;
+.skill-item{
+	background: url(../img/skill.png) repeat-x;
+	height: 25px;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 9px;
+	padding: 0;
+	color: #1e7465;
+	line-height: 11px;
+
+	 &:before{
+		content: "";
+		background: url(../img/skillberofe.png) no-repeat;
+		display: inline-block;
+		min-width: 12px;
+		min-height: 25px;
+		vertical-align: middle;
+		right: 12px;
+		position: relative;
+	}
+	&:after{
+		content: "";
+		background: url(../img/skillafter.png) no-repeat;
+		display: inline-block;
+		min-width: 8px;
+		min-height: 25px;
+		vertical-align: middle;
+		left: 8px;
+		position: relative;
+	} 
+}
+.skill-list{ 
+	margin: 10px 0 0 145px;
+
+	li{
+	display: inline-block;
+	padding: 0 10px;
+}
 }
