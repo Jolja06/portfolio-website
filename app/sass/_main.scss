@@ -1,139 +1,12 @@
-.nav{
-	margin: 0 0 35px 0;
-}
-.nav-list{
-	box-sizing: border-box;
-
-	& :first-child{
-	border-radius: 5px 5px 0 0;
-	}
-	& :last-child{
-		border-radius: 0 0 5px 5px;
-	}
-}
-.nav-item{
-	font-family: "OpenSans-Semibold";
-	font-size: 20px;
-	color: $color;
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-	background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,249,249,1) 6%, rgba(233,230,229,1) 100%);
-	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-    
-	
-	&.active{
-		background-image: linear-gradient(to bottom, rgba(126,232,205,1) 0%, rgba(62,183,153,1) 100%);
-		box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-		text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35);
-		color: $activNavColor;
-
-	}
-	&:hover{
-		transition: background linear .2s, color linear .2s;
-		background-image: linear-gradient(to bottom, rgba(232,231,231,1) 0%, rgba(227,225,225,1) 13%, rgba(194,192,192,1) 100%);
-		box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-		color: $color;
-		
-	}
-	a{
-		text-decoration: none;
-		padding: 14px 25px;
-		display: block;
-		color: $color;
-		text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-		&.active{
-			text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35);
-			color: $activNavColor;
-		}
-		&:hover{
-			color: $color;
-		}
-		
-	}
-}
-
-.contacts-list{
-	@extend .nav-list;
-	background: #fbf9f9;
-	border-radius: 5px;
-}
-.contacts-item-name{
-	padding: 7px 25px;
-	font-family: "OpenSans-Semibold";
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
-	font-size: 20px;
-	background-image: linear-gradient(to bottom, rgba(244,205,128,1) 0%, rgba(244,205,128,1) 10%, rgba(219,177,92,1) 100%);
-	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
-	color: #d0982c;
-}
-.contacts-item{
-	@include clearfix();
-	padding: 0 0 0 48px;
-	background-image: linear-gradient( to bottom, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-	font-size: 14px;
-	color: $color;
-	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-	border-left: 1px solid rgb(214, 213, 211);
-	border-right: 1px solid rgb(214, 213, 211);
-	position: relative;
-	line-height: 38px;
-
-
-	&:hover{
-		transition: background linear .2s, color linear .2s;
-		background-image: linear-gradient(to bottom, rgba(251,249,249,0) 0%, rgba(224,196,145,0.45) 100%);
-		box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-	}
-	&:before{
-		content: "";
-		background-image: url(../img/sprit.png);
-		width: 10px;
-	    height: 38px;
-	    float: left;
-	    background-position: -10px -10px;
-	    margin: 0 30px 0 0;
-	}
-	.contacts-icon{
-		position: absolute;
-		left: 18px;
-		top: 50%;
-		margin-top: -10px;
-	}
-	a{
-		text-decoration: none;
-		color: $color;
-		&.email{
-			text-decoration: underline;
-		}
-	}
-
-}
 .section{
 	margin-bottom: 35px;
 	box-sizing: border-box;
 	font-family: "OpenSans-Semibold";
 	font-size: 14px;
-	color: $color;
-	
+	color: $color;	
 }
-h1{
-	box-sizing: border-box;
-	margin: 0;
-	font-size: 24px;
-	line-height: 55px;
-	color: $colorH1;
-	padding: 0 0 0 42px;
-	text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
-	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-	background-image: linear-gradient(to top, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
-	border-radius: 5px 5px 0 0;
-}
-.about-me{
-	@include clearfix();
-	box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75),inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
-	background-image: linear-gradient( to bottom, #f7f6f5, #f0eeed);
-	padding: 30px 0;
-	border-radius: 0 0 5px 5px;
-}
+
+
 .photo{
 	box-sizing: border-box;
 	float: left;
@@ -159,8 +32,8 @@ h1{
 	width: 420px;
 	padding: 0 42px 0 0;
 	color: $color;
-}
 
+}
 .about-me-description-list span {
 	font-family: "OpenSans"
 }
@@ -168,12 +41,6 @@ h1{
 	line-height: 25px;
 }
 
-.description{
-	@extend .about-me;
-	padding: 47px 42px 20px 42px;
-	line-height: 21px;
-	font-size: 14px;
-}
 .description-list li{
  	margin-left: 97px;
 }
@@ -232,32 +99,33 @@ li{
 }
 .skill-item{
 	background: url(../img/skill.png) repeat-x;
-	height: 25px;
+	min-height: 25px;
 	vertical-align: middle;
 	display: inline-block;
 	font-size: 9px;
 	padding: 0;
 	color: #1e7465;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
 	line-height: 11px;
 
 	 &:before{
 		content: "";
 		background: url(../img/skillberofe.png) no-repeat;
 		display: inline-block;
-		min-width: 12px;
+		min-width: 10px;
 		min-height: 25px;
 		vertical-align: middle;
-		right: 12px;
+		right: 9px;
 		position: relative;
 	}
 	&:after{
 		content: "";
 		background: url(../img/skillafter.png) no-repeat;
 		display: inline-block;
-		min-width: 8px;
+		min-width: 6px;
 		min-height: 25px;
 		vertical-align: middle;
-		left: 8px;
+		left: 5px;
 		position: relative;
 	} 
 }

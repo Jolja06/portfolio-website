@@ -8,8 +8,9 @@ body {
 	background-color: #fafafa;
 	font-family: 'OpenSans';
 	font-size: 14px;
-	background-image: url(../img/bg.jpg);
+	background: url(../img/bg.jpg) center center fixed no-repeat;
 	background-size: cover;
+	color: $color;
 }
 .wrapper{
 	min-height: 100%;
@@ -43,4 +44,21 @@ body {
 .content-area{
 	float: left;
 	width: 650px;
+}
+.about-me{
+	@include clearfix();
+	box-shadow: 0px 1px 1px 0px rgba(236, 232, 227, 0.75),inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
+	background-image: linear-gradient( to bottom, #f7f6f5, #f0eeed);
+	padding: 30px 0;
+	border-radius: 0 0 5px 5px;
+	border-bottom: 1px solid #c5c5c5;
+	border-right: 1px solid #b6b6b6;
+	border-left: 1px solid #b6b6b6;
+	border-top: 1px solid #636363;
+}
+.description{
+	@extend .about-me;
+	padding: 47px 42px 20px 42px;
+	line-height: 21px;
+	font-size: 14px;
 }
