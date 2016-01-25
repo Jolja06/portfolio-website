@@ -1,0 +1,66 @@
+.description{
+	padding-top: 27px;
+}
+.callback{
+	@include clearfix();
+	min-height: 734px;
+}
+.callback-item{
+	font-family: "OpenSans-Light";
+	font-size: 12px;
+	border: 1px solid #d6d4d3;
+	border-radius: 2px;
+	padding: 10px;
+	width: 190px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.callback-input-margin{
+	margin-right: 25px;
+}
+.callback-input{
+	@include clearfix();
+	float: left;
+	margin-bottom:15px;
+
+}
+.callback-item-message{
+	width: 405px;
+	height: 180px;
+	resize: none;
+}
+.capcha-generate{
+	@include clearfix();
+	border: 1px solid #d6d4d3;
+	border-radius: 2px;
+	background: #fbfcfd;
+	width: 180px;
+	height: 66px;
+	padding: 5px;
+	float: left;
+	margin-right: 20px;
+}
+.capcha{
+	@include clearfix();
+}
+.capcha-input{
+	@include clearfix();
+	margin-top: 28px;
+}
+.callback-item-capcha{
+	padding: 6px 10px;
+}
+.callback-button{
+	padding: 10px 25px;	
+	border: 1px solid red;
+	border-radius: 5px;
+	font-family: "OpenSans-Semibold";
+	font-size: 14px;
+	margin: 30px;
+}
+.button{
+	@include clearfix();
+}
+.callback-button-reset{
+	float: right;
+}

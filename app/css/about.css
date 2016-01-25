@@ -47,6 +47,9 @@ h1 {
   border-right: 1px solid #6a6a6a;
   border-top: 1px solid #9c9c9c; }
 
+p {
+  margin: 0 0 7px 0; }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -121,6 +124,10 @@ body {
   padding: 47px 42px 20px 42px;
   line-height: 21px;
   font-size: 14px; }
+
+.callback {
+  width: 405px;
+  margin: 0 auto; }
 
 .header {
   background-image: url(../img/bgheader.jpg);

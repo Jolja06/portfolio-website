@@ -47,6 +47,9 @@ h1 {
   border-right: 1px solid #6a6a6a;
   border-top: 1px solid #9c9c9c; }
 
+p {
+  margin: 0 0 7px 0; }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -121,6 +124,10 @@ body {
   padding: 47px 42px 20px 42px;
   line-height: 21px;
   font-size: 14px; }
+
+.callback {
+  width: 405px;
+  margin: 0 auto; }
 
 .header {
   background-image: url(../img/bgheader.jpg);
@@ -306,3 +313,92 @@ body {
   float: left;
   padding: 0 0 0 10px;
   font-family: "OpenSans-Bold"; }
+
+.description {
+  padding-top: 27px; }
+
+.callback {
+  min-height: 734px; }
+  .callback:before, .callback:after {
+    content: "";
+    display: table; }
+  .callback:after {
+    clear: both; }
+
+.callback-item {
+  font-family: "OpenSans-Light";
+  font-size: 12px;
+  border: 1px solid #d6d4d3;
+  border-radius: 2px;
+  padding: 10px;
+  width: 190px;
+  vertical-align: top;
+  box-sizing: border-box; }
+
+.callback-input-margin {
+  margin-right: 25px; }
+
+.callback-input {
+  float: left;
+  margin-bottom: 15px; }
+  .callback-input:before, .callback-input:after {
+    content: "";
+    display: table; }
+  .callback-input:after {
+    clear: both; }
+
+.callback-item-message {
+  width: 405px;
+  height: 180px;
+  resize: none; }
+
+.capcha-generate {
+  border: 1px solid #d6d4d3;
+  border-radius: 2px;
+  background: #fbfcfd;
+  width: 180px;
+  height: 66px;
+  padding: 5px;
+  float: left;
+  margin-right: 20px; }
+  .capcha-generate:before, .capcha-generate:after {
+    content: "";
+    display: table; }
+  .capcha-generate:after {
+    clear: both; }
+
+.capcha:before, .capcha:after {
+  content: "";
+  display: table; }
+
+.capcha:after {
+  clear: both; }
+
+.capcha-input {
+  margin-top: 28px; }
+  .capcha-input:before, .capcha-input:after {
+    content: "";
+    display: table; }
+  .capcha-input:after {
+    clear: both; }
+
+.callback-item-capcha {
+  padding: 6px 10px; }
+
+.callback-button {
+  padding: 10px 25px;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-family: "OpenSans-Semibold";
+  font-size: 14px;
+  margin: 30px; }
+
+.button:before, .button:after {
+  content: "";
+  display: table; }
+
+.button:after {
+  clear: both; }
+
+.callback-button-reset {
+  float: right; }
