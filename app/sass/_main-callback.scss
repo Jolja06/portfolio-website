@@ -9,11 +9,13 @@
 	font-family: "OpenSans-Light";
 	font-size: 12px;
 	border: 1px solid #d6d4d3;
-	border-radius: 2px;
+	border-radius: 3px;
 	padding: 10px;
 	width: 190px;
 	vertical-align: top;
 	box-sizing: border-box;
+	background: linear-gradient( to bottom, #fbfcfd 0%, #f3f3f3 100%);
+	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 }
 .callback-input-margin{
 	margin-right: 25px;
@@ -32,7 +34,7 @@
 .capcha-generate{
 	@include clearfix();
 	border: 1px solid #d6d4d3;
-	border-radius: 2px;
+	border-radius: 3px;
 	background: #fbfcfd;
 	width: 180px;
 	height: 66px;
@@ -52,11 +54,32 @@
 }
 .callback-button{
 	padding: 10px 25px;	
-	border: 1px solid red;
+	color: rgb(114, 112, 112);
+	border: 1px solid #c5c5c5;
 	border-radius: 5px;
 	font-family: "OpenSans-Semibold";
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
 	font-size: 14px;
 	margin: 30px;
+	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	background: linear-gradient( to bottom, #fefefd 0%, #e9e6e5 94%, rgb(255,255,255) 100%);
+	&:hover{
+		box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+		background: linear-gradient( to top, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	}
+}
+.callback-button-submit{
+	background: linear-gradient( to top, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+	border-top: 1px solid #6adbbc;
+	border-left: #44ac8f ;
+	border-right: #44ac8f;
+	border-bottom: #34a282;
+	color: rgb(30, 116, 101);
+	&:hover{
+		box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+		background: linear-gradient( to top, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+	}
 }
 .button{
 	@include clearfix();
