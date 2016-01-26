@@ -337,6 +337,8 @@ body {
   background: -webkit-linear-gradient(top, #fbfcfd 0%, #f3f3f3 100%);
   background: linear-gradient(to bottom, #fbfcfd 0%, #f3f3f3 100%);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1); }
+  .callback-item:focus {
+    outline-color: #cb6945; }
 
 .callback-input-margin {
   margin-right: 25px; }
@@ -397,6 +399,7 @@ body {
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
   font-size: 14px;
   margin: 30px;
+  outline: none;
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
   background: -webkit-linear-gradient(top, #fefefd 0%, #e9e6e5 94%, white 100%);
   background: linear-gradient(to bottom, #fefefd 0%, #e9e6e5 94%, white 100%); }
