@@ -10,7 +10,6 @@
 	float: left;
 	width: 166px;
 	box-sizing: border-box;
-	background: black;
 	overflow: hidden;
 	&:nth-child(2){
 		margin: 0 33px;
@@ -26,8 +25,10 @@
   position: relative;
   background: #6f6d6d;
   opacity: .41;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   &:hover{
     opacity: 1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   }
 }
 .wrap-image-link{
@@ -41,12 +42,16 @@
 	text-align: center;
 	line-height: 32px;
 }
+.no-rgba .project-name{
+	background: #f2f2f2;
+}
 .poject-description{
 	font-family: "OpenSans";
 	font-size: 12px;
 	line-height: 16px;
 	text-align: center;
 	padding: 8px;
+	background: #ffffff;
 }
 .more-project{
   position: absolute;
@@ -56,6 +61,7 @@
   text-align: center;
   &:hover .more-link{
     opacity: 1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   }
    
 }
@@ -70,6 +76,11 @@
   text-decoration: none;
   padding: 5px 7px;
   border-radius: 5px;
+
+}
+.no-rgba .more-link{
+	background: #ebecec;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
 }
 .project-add{
 	text-align: center;

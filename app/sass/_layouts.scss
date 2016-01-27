@@ -27,7 +27,7 @@ body {
 }
 .container-footer{
 	@include clearfix();
-	width: 960px;
+	width: 620px;
 	margin: auto;
 }
 .container-wide{
@@ -55,6 +55,9 @@ body {
 	border-right: 1px solid #b6b6b6;
 	border-left: 1px solid #b6b6b6;
 	border-top: 1px solid #636363;
+}
+.no-cssgradients .about-me{
+	background: #f4f3f2;
 }
 .description{
 	@extend .about-me;

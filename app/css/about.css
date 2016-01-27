@@ -31,7 +31,7 @@ ul {
   padding: 0;
   margin: 0; }
 
-h1 {
+.section-title {
   box-sizing: border-box;
   margin: 0;
   font-size: 24px;
@@ -49,6 +49,9 @@ h1 {
 
 p {
   margin: 0 0 7px 0; }
+
+.no-cssgradients .section-title {
+  background: #8f8c8c; }
 
 html, body {
   height: 100%;
@@ -81,7 +84,7 @@ body {
     clear: both; }
 
 .container-footer {
-  width: 960px;
+  width: 620px;
   margin: auto; }
   .container-footer:before, .container-footer:after {
     content: "";
@@ -120,6 +123,9 @@ body {
   .about-me:after, .description:after {
     clear: both; }
 
+.no-cssgradients .about-me, .no-cssgradients .description {
+  background: #f4f3f2; }
+
 .description {
   padding: 47px 42px 20px 42px;
   line-height: 21px;
@@ -141,6 +147,9 @@ body {
   .social-icon li {
     display: inline-block;
     margin: 0 0 0 5px; }
+    .social-icon li a {
+      height: 44px;
+      display: block; }
 
 .link-logo {
   display: inline-block;
@@ -223,6 +232,14 @@ body {
     .nav-item a:hover {
       color: #727070; }
 
+.no-cssgradients .nav-item {
+  background: #f2efef;
+  border-bottom: 1px solid #d2d2d2; }
+  .no-cssgradients .nav-item.active {
+    background: #54c8ab; }
+  .no-cssgradients .nav-item:hover {
+    background: #e3e1e1; }
+
 .contacts-list {
   background: #fbf9f9;
   border-radius: 5px; }
@@ -236,6 +253,10 @@ body {
   background-image: linear-gradient(to bottom, #f4cd80 0%, #f4cd80 10%, #dbb15c 100%);
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
   color: #d0982c; }
+
+.no-cssgradients .contacts-item-name {
+  background: #eac171;
+  border-bottom: 1px solid #d6d5d3; }
 
 .contacts-item {
   padding: 0 0 0 48px;
@@ -277,6 +298,12 @@ body {
     color: #727070; }
     .contacts-item a.email {
       text-decoration: underline; }
+
+.no-cssgradients .contacts-item {
+  background: #f9f8f8;
+  border-bottom: 1px solid #d6d5d3; }
+  .no-cssgradients .contacts-item:hover {
+    background: #f9f4ea; }
 
 .section {
   margin-bottom: 35px;
@@ -410,14 +437,16 @@ li.file:before {
   color: #727070;
   font-size: 12px; }
 
+.no-cssgradients .footer {
+  background: #f7f7f7; }
+
 .copyright {
-  width: 650px;
   float: left;
   line-height: 60px;
   font-family: "OpenSans-Light"; }
 
 .login {
-  width: 310px;
+  width: 125px;
   float: left;
   line-height: 60px; }
 

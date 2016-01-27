@@ -72,6 +72,12 @@
 		background: linear-gradient( to top, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	}
 }
+.no-cssgradients .callback-button{
+	background: #f1efee;
+	&:hover{
+		background: #d5d3d3;
+	}
+}
 .callback-button-submit{
 	background: linear-gradient( to top, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
@@ -83,6 +89,12 @@
 	&:hover{
 		box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 		background: linear-gradient( to top, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+	}
+}
+.no-cssgradients .callback-button-submit{
+	background: #61cfb0;
+	&:hover{
+		background: #49b99d;
 	}
 }
 .button{

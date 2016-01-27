@@ -7,14 +7,17 @@
 	color: #727070;
 	font-size: 12px;
 }
+.no-cssgradients .footer{
+	background: #f7f7f7;
+}
+
 .copyright{
-	width: 650px;
 	float: left;
 	line-height: $footer;
 	font-family: "OpenSans-Light";
 }
 .login{
-	width: 310px;
+	width: 125px;
 	float: left;
 	line-height: $footer;
 }
