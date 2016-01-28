@@ -344,7 +344,8 @@ body {
   font-family: "OpenSans-Bold"; }
 
 .project {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  min-width: 565px; }
   .project:before, .project:after {
     content: "";
     display: table; }
