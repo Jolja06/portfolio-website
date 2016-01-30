@@ -35,9 +35,9 @@ ul {
   box-sizing: border-box;
   margin: 0;
   font-size: 24px;
-  line-height: 55px;
+  line-height: 25px;
   color: #eeedec;
-  padding: 0 0 0 42px;
+  padding: 14px 0 14px 42px;
   text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
   background-image: -webkit-linear-gradient(bottom, #7b7878 0%, #a9a8a8 100%);
@@ -66,6 +66,11 @@ body {
   background: url(../img/bg.jpg) center center fixed no-repeat;
   background-size: cover;
   color: #727070; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
 
 .wrapper {
   min-height: 100%;
