@@ -160,6 +160,8 @@ body {
   margin: -36px 0 0 0; }
   .link-logo img {
     margin: 0 0 0 9px; }
+  .link-logo h1 {
+    font-size: 0px; }
 
 .social {
   position: absolute;
@@ -174,6 +176,10 @@ body {
   background-position: -151px -10px; }
   .social-icon-fb:hover, .social-icon-vk:hover, .social-icon-tw:hover, .social-icon-gh:hover {
     background-position: -114px -74px; }
+  .social-icon-fb a, .social-icon-vk a, .social-icon-tw a, .social-icon-gh a {
+    overflow: hidden;
+    color: transparent;
+    text-indent: -65px; }
 
 .social-icon-vk {
   background-position: -270px -191px; }
@@ -193,11 +199,11 @@ body {
 .nav {
   margin: 0 0 35px 0; }
 
-.nav-list, .contacts-list {
+.nav-list {
   box-sizing: border-box; }
-  .nav-list :first-child, .contacts-list :first-child {
+  .nav-list :first-child {
     border-radius: 5px 5px 0 0; }
-  .nav-list :last-child, .contacts-list :last-child {
+  .nav-list :last-child {
     border-radius: 0 0 5px 5px; }
 
 .nav-item {
@@ -243,9 +249,9 @@ body {
 
 .contacts-list {
   background: #fbf9f9;
-  border-radius: 5px; }
+  border-radius: 0 0 5px 5px; }
 
-.contacts-item-name {
+.contacts-name {
   padding: 7px 25px;
   font-family: "OpenSans-Semibold";
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
@@ -253,14 +259,15 @@ body {
   background-image: -webkit-linear-gradient(top, #f4cd80 0%, #f4cd80 10%, #dbb15c 100%);
   background-image: linear-gradient(to bottom, #f4cd80 0%, #f4cd80 10%, #dbb15c 100%);
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
-  color: #d0982c; }
+  color: #d0982c;
+  border-radius: 5px 5px 0 0; }
 
 .no-cssgradients .contacts-item-name {
   background: #eac171;
   border-bottom: 1px solid #d6d5d3; }
 
 .contacts-item {
-  padding: 0 0 0 48px;
+  padding: 0 5px 0 48px;
   background-image: -webkit-linear-gradient(top, #e9e7e7 0%, rgba(251, 249, 249, 0) 100%);
   background-image: linear-gradient(to bottom, #e9e7e7 0%, rgba(251, 249, 249, 0) 100%);
   font-size: 14px;
@@ -269,7 +276,9 @@ body {
   border-left: 1px solid #d6d5d3;
   border-right: 1px solid #d6d5d3;
   position: relative;
-  line-height: 38px; }
+  line-height: 38px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
   .contacts-item:before, .contacts-item:after {
     content: "";
     display: table; }
@@ -281,14 +290,6 @@ body {
     background-image: -webkit-linear-gradient(top, rgba(251, 249, 249, 0) 0%, rgba(224, 196, 145, 0.45) 100%);
     background-image: linear-gradient(to bottom, rgba(251, 249, 249, 0) 0%, rgba(224, 196, 145, 0.45) 100%);
     box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1); }
-  .contacts-item:before {
-    content: "";
-    background-image: url(../img/sprit.png);
-    width: 10px;
-    height: 38px;
-    float: left;
-    background-position: -10px -10px;
-    margin: 0 30px 0 0; }
   .contacts-item .contacts-icon {
     position: absolute;
     left: 18px;
@@ -296,9 +297,34 @@ body {
     margin-top: -10px; }
   .contacts-item a {
     text-decoration: none;
-    color: #727070; }
+    color: #727070;
+    padding: 0 5px 0 40px; }
     .contacts-item a.email {
       text-decoration: underline; }
+  .contacts-item:last-child {
+    border-radius: 0 0 5px 5px; }
+
+.contacts-icon {
+  background-image: url(../img/sprit.png);
+  width: 22px;
+  height: 22px; }
+  .contacts-icon:before {
+    content: "";
+    background-image: url(../img/sprit.png);
+    width: 10px;
+    height: 38px;
+    float: left;
+    background-position: -10px -10px;
+    margin: -9px 0 0 30px; }
+
+.contacts-icon-email {
+  background-position: -114px -5px; }
+
+.contacts-icon-phone {
+  background-position: -50px -85px; }
+
+.contacts-icon-skype {
+  background-position: -10px -85px; }
 
 .no-cssgradients .contacts-item {
   background: #f9f8f8;

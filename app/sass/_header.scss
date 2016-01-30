@@ -26,6 +26,9 @@
 	img{
 		margin: 0 0 0 9px;
 	}
+	h1{
+		font-size: 0px;
+	}
 
 }
 .social{
@@ -41,6 +44,11 @@
     background-position: -151px -10px;
     &:hover{
 		background-position: -114px -74px;
+	}
+	a{
+		overflow: hidden;
+		color: transparent;
+		text-indent: -65px;
 	}
 }
 

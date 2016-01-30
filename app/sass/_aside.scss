@@ -61,11 +61,10 @@
 	}
 }
 .contacts-list{
-	@extend .nav-list;
 	background: #fbf9f9;
-	border-radius: 5px;
+	border-radius: 0 0 5px 5px;
 }
-.contacts-item-name{
+.contacts-name{
 	padding: 7px 25px;
 	font-family: "OpenSans-Semibold";
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
@@ -73,6 +72,7 @@
 	background-image: linear-gradient(to bottom, rgba(244,205,128,1) 0%, rgba(244,205,128,1) 10%, rgba(219,177,92,1) 100%);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
 	color: #d0982c;
+	border-radius: 5px 5px 0 0;
 }
 .no-cssgradients .contacts-item-name{
 	background: #eac171;
@@ -81,7 +81,7 @@
 }
 .contacts-item{
 	@include clearfix();
-	padding: 0 0 0 48px;
+	padding: 0 5px 0 48px;
 	background-image: linear-gradient( to bottom, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	font-size: 14px;
 	color: $color;
@@ -90,20 +90,14 @@
 	border-right: 1px solid rgb(214, 213, 211);
 	position: relative;
 	line-height: 38px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	&:hover{
 		transition: background linear .2s, color linear .2s;
 		background-image: linear-gradient(to bottom, rgba(251,249,249,0) 0%, rgba(224,196,145,0.45) 100%);
 		box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 	}
-	&:before{
-		content: "";
-		background-image: url(../img/sprit.png);
-		width: 10px;
-	    height: 38px;
-	    float: left;
-	    background-position: -10px -10px;
-	    margin: 0 30px 0 0;
-	}
+	 
 	.contacts-icon{
 		position: absolute;
 		left: 18px;
@@ -113,11 +107,38 @@
 	a{
 		text-decoration: none;
 		color: $color;
+		padding: 0 5px 0 40px;
 		&.email{
 			text-decoration: underline;
 		}
 	}
+	&:last-child{
+		border-radius: 0 0 5px 5px;
+	}
 
+}
+.contacts-icon{
+	background-image: url(../img/sprit.png);
+	width: 22px;
+	height: 22px;
+	&:before{
+		content: "";
+		background-image: url(../img/sprit.png);
+		width: 10px;
+	    height: 38px;
+	    float: left;
+	    background-position: -10px -10px;
+	    margin: -9px 0 0 30px;
+	} 
+}
+.contacts-icon-email{
+	background-position: -114px -5px;
+}
+.contacts-icon-phone{
+	background-position: -50px -85px;
+}
+.contacts-icon-skype{
+	background-position: -10px -85px;
 }
 .no-cssgradients .contacts-item{
 	background: #f9f8f8;
