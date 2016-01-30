@@ -10,8 +10,7 @@
 .photo{
 	box-sizing: border-box;
 	float: left;
-	width: 230px;
-	padding: 10px 0 0 42px;
+	margin-top: 9px;
 }
 .photo-box{
 	box-sizing: border-box;
@@ -25,27 +24,31 @@
 .photo-box img{
 	width: 100%;
 }
-.about-me-description{
+ .about-me-desctiption{
 	box-sizing: border-box;
-	//float: left;
-	margin-left: 230px;
-	width: 420px;
-	padding: 0 42px 0 0;
+	float: right;
+	width:380px;
 	color: $color;
 
 }
-.about-me-description-list span {
-	font-family: "OpenSans"
+.about-me-description-item {
+	font-family: "OpenSans";
+	word-break: break-all;
+	display: inline-block;
+	max-width: 216px;
 }
 .about-me-description-list li{
 	line-height: 25px;
+} 
+.about-me-description-name{
+	display: inline-block;
+	padding-right: 12px;
+	vertical-align: top;
 }
-
-.description-list li{
- 	margin-left: 97px;
+.description-me{
+	padding: 32px 42px 32px 42px;
 }
-
-.description-list span {
+.description-list-year{
 	display: block;
 	font-family: "OpenSans"
 }
@@ -55,7 +58,7 @@
 	border-bottom: 1px solid #dbdbda;
 	box-shadow: 0px 1px 1px 0px rgba(251, 251, 251, 0.75);
 	border-radius: 1px;
-	margin: 25px 0 25px -97px;
+	margin: 25px 0 25px 0;
 }
  .description-list li:last-child:after {
 	content: " ";
@@ -64,38 +67,34 @@
 	box-shadow: none;
 	padding-bottom: 0px
 } 
-.description-list li:before{
-	content: "";
+.case-icon{
+	background-image: url(../img/sprit.png);
+	background-position: -40px -10px;
 	width: 54px;
 	height: 55px;
+	display: inline-block;
 	float: left;
-	display: block;
-	background-repeat: no-repeat;
+	margin-right: 40px;
+	margin-top: -5px; 
 }
-
-li.case:before{
-	 background-image: url(../img/sprit.png);
-	 background-position: -40px -10px;
-	 margin-left: -97px;
-	 margin-top: -7px;
+.school-icon{
+	@extend .case-icon;
+	background-position: -252px -10px;
 }
-li{
-	&.school:before{
-		@extend li.case:before;
-		background-position: -252px -10px;
-	}
-	&.graduate:before{
-		@extend li.case:before;
-		background-position: -134px -149px;
-	}
-	&.file:before{
-		@extend li.case:before;
-		background-position: -176px -74px;
-	}
+.graduate-icon{
+	@extend .case-icon;
+	background-position: -134px -149px;
+}
+.file-icon{
+	@extend .case-icon;
+	background-position: -176px -74px;
+}
+.description-list-name{
+	display: inline-block;
+	max-width: 470px;
 }
 .skill{
 	padding-top: 10px;
-	float: left;
 }
 .skill-item{
 	background: url(../img/skill.png) repeat-x;
@@ -129,11 +128,8 @@ li{
 		position: relative;
 	} 
 }
-.skill-list{ 
-	margin: -25px 0 0 145px;
-
-	li{
+.skill-list{
 	display: inline-block;
 	padding: 0 10px;
 }
-}
+

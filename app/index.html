@@ -45,7 +45,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="content">
+		<div class="content">
 			<div class="container">
 				<aside class="aside">
 					<nav class="nav">
@@ -64,31 +64,34 @@
 						</ul>
 					</div>
 				</aside>
-				<div class="content-area">
+				<main class="content-area">
 					<section class="section">
 						<h2 class="section-title">Основная информация</h2>
-						<div class="about-me">
+						<div class="description description-me">
 							<div class="photo">
 								<div class="photo-box">
-									<img src="img/photo.jpg" alt="Анищенкова Елена">
+									<img src="img/photo.jpg" alt="Анищенкова Елена" class="photo-box-img">
 								</div>
 							</div>
-							<div class="about-me-description">
+							<div class="about-me-desctiption">
 								<ul class="about-me-description-list">
-									<li>Меня зовут: <span>Анищенкова Елена Витальевна</span></li>
-									<li>Мой возраст: <span>23 года</span></li>
-									<li>Мой город: <span>Москва, Россия</span></li>
-									<li>Моя специализация: <span>frontend разработка</span></li>
-									<li class="skill">Ключевые навыки:
-										<ul class="skill-list"> 
-											<li><span class="skill-item">HTML</span> </li>
-											<li><span class="skill-item">CSS</span> </li>
-											<li><span class="skill-item">JQUERY</span></li> 
-											<li><span class="skill-item">JAVASCRIPT</span></li>
-											<li><span class="skill-item">GIT</span></li> 
-											<li><span class="skill-item">GULP</span></li>
-										</ul>
-									</li>								
+									<li><div class="about-me-description-name">Меня зовут:</div> <div class="about-me-description-item">Анищенкова Елена Витальевна</div></li>
+									<li><div class="about-me-description-name">Мой возраст: </div><div class="about-me-description-item">23 года</div></li>
+									<li><div class="about-me-description-name">Мой город: </div><div class="about-me-description-item">Москва, Россия</div></li>
+									<li><div class="about-me-description-name">Моя специализация:</div> <div class="about-me-description-item">frontend разработка</div></li>
+									<li class="skill">
+										<div class="about-me-description-name">Ключевые навыки:</div>
+										<div class="about-me-description-item">
+											<ul class="skill-list-wrap"> 
+												<li class="skill-list"><span class="skill-item">HTML</span> </li>
+												<li class="skill-list"><span class="skill-item">CSS</span> </li>
+												<li class="skill-list"><span class="skill-item">JQUERY</span></li> 
+												<li class="skill-list"><span class="skill-item">JAVASCRIPT</span></li>
+												<li class="skill-list"><span class="skill-item">GIT</span></li> 
+												<li class="skill-list"><span class="skill-item">GULP</span></li>
+											</ul>
+										</div>
+									</li>		
 								</ul>
 							</div>
 						</div>
@@ -97,8 +100,8 @@
 						<h2 class="section-title">Опыт работы</h2>
 						<div class="description">
 							<ul class="description-list">
-								<li class="case">ЗАО &laquo;Связной-Клуб&raquo; &ndash; делопроизводитель <span>август 2014 &ndash; февраль 2015</span></li>
-								<li class="case">АО &laquo;Связной-Клуб&raquo; &ndash; html-верстальщик <span>февраль 2015 &ndash; по настоящее время</span></li>
+								<li class="case"><i class="case-icon"></i><div class="description-list-name">ЗАО &laquo;Связной-Клуб&raquo; &ndash; делопроизводитель <span class="description-list-year">август 2014 &ndash; февраль 2015</span></div></li>
+								<li class="case"><i class="case-icon"></i><div class="description-list-name">АО &laquo;Связной-Клуб&raquo; &ndash; html-верстальщик <span class="description-list-year">февраль 2015 &ndash; по настоящее время</span></div></li>
 							</ul>
 						</div>
 					</section>
@@ -106,16 +109,16 @@
 						<h2 class="section-title">Образование</h2>
 						<div class="description">
 							<ul class="description-list">
-								<li class="school">Полное среднее. Школа №9 г. Вязьма <span>1999-2010</span></li>
-								<li class="file">Среднее специальное. Колледж современных технологий г.Вязьма <span>2008-2010</span></li>
-								<li class="graduate">Высшее образование. МГУП им. Ивана Федорова <span>2010-2015</span></li>
-								<li class="file">Курсы Loftschool.com <span>январь 2016 &ndash; по настоящее время</span></li>
+								<li class="school"><i class="school-icon"></i><div class="description-list-name">Полное среднее. Школа №9 г. Вязьма <span class="description-list-year">1999-2010</span></div></li>
+								<li class="file"><i class="file-icon"></i><div class="description-list-name">Среднее специальное. Колледж современных технологий г.Вязьма <span class="description-list-year">2008-2010</span></div></li>
+								<li class="graduate"><i class="graduate-icon"></i><div class="description-list-name">Высшее образование. МГУП им. Ивана Федорова <span class="description-list-year">2010-2015</span></div></li>
+								<li class="file"><i class="file-icon"></i><div class="description-list-name">Курсы Loftschool.com <span class="description-list-year">январь 2016 &ndash; по настоящее время</span></div></li>
 							</ul>
 						</div>
 					</section>
-				</div>
+				</main>
 			</div>
-		</main>
+		</div>
 		<div class="empty"></div>
 	</div>
 	<footer class="footer">
