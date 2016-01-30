@@ -47,8 +47,9 @@ ul {
   border-right: 1px solid #6a6a6a;
   border-top: 1px solid #9c9c9c; }
 
-p {
-  margin: 0 0 7px 0; }
+label {
+  margin: 0 0 7px 0;
+  display: block; }
 
 .no-cssgradients .section-title {
   background: #8f8c8c; }

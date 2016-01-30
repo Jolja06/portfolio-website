@@ -71,27 +71,27 @@
 							<div class="callback">
 								<form action="#" name="callback" class="callback-form">
 									<div class="callback-input callback-input-margin">
-										<p>Имя</p>
+										<label for="name">Имя</label>
 										<input class="callback-item" type="text" name="name" id="name" placeholder="Как к Вам обращаться" required>
 									</div>
 									<div class="callback-input">
-										<p>Email</p>
+										<label for="email">Email</label>
 										<input class="callback-item" type="email" name="email" id="email" placeholder="Куда мне писать" required>
 									</div>
 										<div class="callback-input">
-											<p>Сообщение</p>
+											<label for="message">Сообщение</label>
 											<textarea class="callback-item callback-item-message" type="text" name="message" id="message" placeholder="Кратко в чем суть" required></textarea>
 										</div>
 									<div class="capcha">
-										<p>Введите код, указанный на картинке</p>
+										<label for="capcha">Введите код, указанный на картинке</label>
 										<div class="capcha-generate"><img src="img/capcha.png" alt="capcha"></div>
 										<div class="capcha-input">
 											<input class="callback-item callback-item-capcha" type="text" name="capcha" id="capcha" placeholder="Введите код" required>
 										</div>
 									</div>
 									<div class="button">
-										<input type="submit" class="callback-button callback-button-submit" value="Отправить">
-										<input type="reset" class="callback-button callback-button-reset" value="Очистить">
+										<button type="submit" name="submit" class="callback-button callback-button-submit" value="Отправить">Отправить</button>
+										<button type="reset" name="reset" class="callback-button callback-button-reset" value="Очистить">Очистить</button>
 									</div>
 								</form>
 							</div>
