@@ -187,14 +187,14 @@ body {
     text-indent: -65px; }
 
 .social-icon-vk {
-  background-position: -270px -191px; }
+  background-position: -54px -213px; }
   .social-icon-vk:hover {
-    background-position: -10px -255px; }
+    background-position: -208px -213px; }
 
 .social-icon-tw {
   background-position: -250px -85px; }
   .social-icon-tw:hover {
-    background-position: -208px -149px; }
+    background-position: -249px -149px; }
 
 .social-icon-gh {
   background-position: -10px -149px; }
@@ -300,14 +300,15 @@ body {
     left: 18px;
     top: 50%;
     margin-top: -10px; }
-  .contacts-item a {
-    text-decoration: none;
-    color: #727070;
-    padding: 0 5px 0 40px; }
-    .contacts-item a.email {
-      text-decoration: underline; }
   .contacts-item:last-child {
     border-radius: 0 0 5px 5px; }
+
+.icon-link {
+  text-decoration: none;
+  color: #727070;
+  padding: 0 5px 0 40px; }
+  .icon-link.email {
+    text-decoration: underline; }
 
 .contacts-icon {
   background-image: url(../img/sprit.png);
@@ -323,7 +324,7 @@ body {
     margin: -9px 0 0 30px; }
 
 .contacts-icon-email {
-  background-position: -114px -5px; }
+  background-position: -114px -10px; }
 
 .contacts-icon-phone {
   background-position: -50px -85px; }
@@ -365,11 +366,11 @@ body {
   width: 24px;
   height: 22px;
   background-image: url(../img/sprit.png);
-  background-position: -214px -11px;
+  background-position: -213px -10px;
   margin-top: 19px;
   float: left; }
   .sprite-locked:hover {
-    background-position: -270px -150px; }
+    background-position: -10px -213px; }
 
 .log {
   float: left;
@@ -398,27 +399,52 @@ body {
   width: 166px;
   box-sizing: border-box;
   overflow: hidden;
+  margin-left: 33px;
   border: 1px solid #b6b6b6;
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
   border-radius: 5px;
   background: -webkit-linear-gradient(bottom, #edebea 0%, #fbf9f9 94%, white 100%);
   background: linear-gradient(to top, #edebea 0%, #fbf9f9 94%, white 100%); }
-  .project-wrap:nth-child(2) {
-    margin: 0 33px; }
+  .project-wrap:first-child {
+    margin-left: 0px; }
+
+.project-item {
+  position: relative; }
+
+.more-project {
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+
+.more-link {
+  color: #757374;
+  border: 1px solid #b2b2b2;
+  background: rgba(247, 247, 247, 0.9);
+  text-decoration: none;
+  padding: 5px 7px;
+  border-radius: 5px; }
+
+.no-rgba .more-link {
+  background: #ebecec;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
 
 .project-pic {
-  overflow: hidden;
+  background-color: #c4c3c3;
   height: 119px;
-  position: relative;
-  background: #6f6d6d;
-  opacity: .41;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50); }
-  .project-pic:hover {
-    opacity: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100); }
+  overflow: hidden; }
 
-.wrap-image-link {
-  display: block; }
+.project-item:hover .more-project {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100); }
+
+.project-item:hover .projects-img {
+  opacity: .2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20); }
 
 .project-name {
   font-family: "OpenSans-Semibold";
@@ -439,32 +465,6 @@ body {
   padding: 8px;
   background: #ffffff; }
 
-.more-project {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center; }
-  .more-project:hover .more-link {
-    opacity: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100); }
-
-.more-link {
-  position: absolute;
-  left: 35px;
-  top: 45%;
-  opacity: 0;
-  color: #757374;
-  border: 1px solid #b2b2b2;
-  background: rgba(247, 247, 247, 0.9);
-  text-decoration: none;
-  padding: 5px 7px;
-  border-radius: 5px; }
-
-.no-rgba .more-link {
-  background: #ebecec;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
-
 .project-add {
   text-align: center; }
   .project-add a {
@@ -475,8 +475,6 @@ body {
     .project-add a:hover {
       background-color: #d7d7d7;
       box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.75), inset 1px 1px 0px 0px rgba(199, 199, 199, 0.75); }
-    .project-add a img {
-      padding: 17px 0 0 0; }
     .project-add a span {
       display: block;
       padding: 10px 0 0 0px;
@@ -490,3 +488,11 @@ body {
       width: 55px;
       height: 55px;
       margin: 25px 0 0 0; }
+
+.project-add-icon {
+  background: url(../img/sprit.png);
+  width: 21px;
+  height: 21px;
+  background-position: -208px -149px;
+  display: block;
+  margin: 18px auto; }

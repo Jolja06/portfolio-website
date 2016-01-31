@@ -104,7 +104,13 @@
 		top: 50%;
 		margin-top: -10px;
 	}
-	a{
+	
+	&:last-child{
+		border-radius: 0 0 5px 5px;
+	}
+
+}
+.icon-link{
 		text-decoration: none;
 		color: $color;
 		padding: 0 5px 0 40px;
@@ -112,11 +118,6 @@
 			text-decoration: underline;
 		}
 	}
-	&:last-child{
-		border-radius: 0 0 5px 5px;
-	}
-
-}
 .contacts-icon{
 	background-image: url(../img/sprit.png);
 	width: 22px;
@@ -132,7 +133,7 @@
 	} 
 }
 .contacts-icon-email{
-	background-position: -114px -5px;
+	background-position: -114px -10px;
 }
 .contacts-icon-phone{
 	background-position: -50px -85px;

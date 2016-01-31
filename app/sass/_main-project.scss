@@ -12,29 +12,57 @@
 	width: 166px;
 	box-sizing: border-box;
 	overflow: hidden;
-	&:nth-child(2){
-		margin: 0 33px;
+	margin-left: 33px;
+	&:first-child{
+		margin-left: 0px;
 	}
 	border: 1px solid #b6b6b6;
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
 	border-radius: 5px;
 	background: linear-gradient( to top, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 }
+//Анимация
+.project-item{
+	position: relative;
+
+}
+.more-project{
+	position: absolute;
+	width: 100%;
+    top: 55px;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.more-link{
+	color: #757374;
+	border: 1px solid #b2b2b2;
+	background: rgba(247, 247, 247, .9);
+	text-decoration: none;
+	padding: 5px 7px;
+	border-radius: 5px;
+}
+.no-rgba .more-link{
+	background: #ebecec;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
 .project-pic{
-  overflow: hidden;
-  height: 119px;
-  position: relative;
-  background: #6f6d6d;
-  opacity: .41;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  &:hover{
-    opacity: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-  }
+	background-color: #c4c3c3;
+	height: 119px;
+	overflow: hidden;
 }
-.wrap-image-link{
-  display: block;
+.project-item{
+	&:hover .more-project{
+		opacity: 1;
+		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+	}
+	&:hover .projects-img {
+		opacity: .2;
+		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+	}
 }
+//Анимация конец
 .project-name{
 	font-family: "OpenSans-Semibold";
 	background: rgba(65, 64, 64, 0.071);
@@ -54,35 +82,6 @@
 	padding: 8px;
 	background: #ffffff;
 }
-.more-project{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  &:hover .more-link{
-    opacity: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-  }
-   
-}
-  .more-link{
-  position: absolute;
-  left: 35px;
-  top: 45%;
-  opacity: 0;
-  color: #757374;
-  border: 1px solid #b2b2b2;
-  background: rgba(247, 247, 247, .9);
-  text-decoration: none;
-  padding: 5px 7px;
-  border-radius: 5px;
-
-}
-.no-rgba .more-link{
-	background: #ebecec;
-	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-}
 .project-add{
 	text-align: center;
 	a{
@@ -94,11 +93,6 @@
 		background-color: #d7d7d7;
 		box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.75),inset 1px 1px 0px 0px rgba(199, 199, 199, 0.75);
 		}
-		
-	img{
-		padding: 17px 0 0 0;
-
-	}
 	span{
 		display: block;
 		padding: 10px 0 0 0px;
@@ -115,4 +109,12 @@
 		margin:25px 0 0 0;
 	}
 	}
+}
+.project-add-icon{
+	background: url(../img/sprit.png);
+	width: 21px;
+    height: 21px;
+    background-position: -208px -149px;
+    display: block;
+    margin: 18px auto;
 }
