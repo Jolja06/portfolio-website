@@ -364,35 +364,24 @@ body {
 
 .about-me-desctiption {
   box-sizing: border-box;
-<<<<<<< HEAD
   float: right;
   width: 380px;
-=======
-  margin-left: 188px;
->>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
   color: #727070; }
 
 .about-me-description-item {
   font-family: "OpenSans";
-<<<<<<< HEAD
   word-break: break-all;
   display: inline-block;
   max-width: 216px; }
-=======
-  word-break: break-all; }
->>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 
 .about-me-description-list li {
   line-height: 25px; }
 
-<<<<<<< HEAD
 .about-me-description-name {
   display: inline-block;
   padding-right: 12px;
   vertical-align: top; }
 
-=======
->>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 .description-me {
   padding: 32px 42px 32px 42px; }
 
@@ -420,21 +409,13 @@ body {
   background-position: -40px -10px;
   width: 54px;
   height: 55px;
-<<<<<<< HEAD
   display: inline-block;
-=======
-  display: block;
->>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
   float: left;
   margin-right: 40px;
   margin-top: -5px; }
 
 .school-icon {
-<<<<<<< HEAD
   background-position: -257px -10px; }
-=======
-  background-position: -252px -10px; }
->>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 
 .graduate-icon {
   background-position: -134px -149px; }
@@ -448,12 +429,6 @@ body {
 
 .skill {
   padding-top: 10px; }
-<<<<<<< HEAD
-=======
-
-.skill-list-wrap {
-  margin-left: 147px; }
->>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 
 .skill-item {
   background: url(../img/skill.png) repeat-x;
@@ -484,26 +459,9 @@ body {
     left: 5px;
     position: relative; }
 
-<<<<<<< HEAD
 .skill-list {
   display: inline-block;
   padding: 0 10px; }
-=======
-.skill-list li {
-  display: inline-block;
-  padding: 0 10px; }
-
-.skill-name {
-  float: left;
-  padding-right: 10px; }
-
-.skill-wrap:before, .skill-wrap:after {
-  content: "";
-  display: table; }
-
-.skill-wrap:after {
-  clear: both; }
->>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 
 .footer {
   height: 60px;
