@@ -21,10 +21,13 @@ body {
 .empty{
 	height: $footer;
 }
+.content{
+	margin: 35px auto;
+}
 .container{
 	@include clearfix();
 	width: 960px;
-	margin: 35px auto;
+	margin: auto;
 }
 .container-footer{
 	@include clearfix();

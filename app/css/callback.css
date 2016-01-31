@@ -80,9 +80,12 @@ body {
 .empty {
   height: 60px; }
 
+.content {
+  margin: 35px auto; }
+
 .container {
   width: 960px;
-  margin: 35px auto; }
+  margin: auto; }
   .container:before, .container:after {
     content: "";
     display: table; }
