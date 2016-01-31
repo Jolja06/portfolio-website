@@ -345,20 +345,21 @@ body {
   background: linear-gradient(to bottom, #ffffff, #f0f0f0);
   box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
   color: #727070;
-  font-size: 12px; }
+  font-size: 12px;
+  overflow: hidden; }
 
 .no-cssgradients .footer {
   background: #f7f7f7; }
 
 .copyright {
   float: left;
-  line-height: 60px;
-  font-family: "OpenSans-Light"; }
+  padding: 21px 0;
+  font-family: "OpenSans-Light";
+  max-width: 495px; }
 
 .login {
   width: 125px;
-  float: left;
-  line-height: 60px; }
+  float: left; }
 
 .sprite-locked {
   width: 24px;
@@ -372,7 +373,7 @@ body {
 
 .log {
   float: left;
-  padding: 0 0 0 10px;
+  padding: 21px 0;
   font-family: "OpenSans-Bold"; }
 
 .description {
