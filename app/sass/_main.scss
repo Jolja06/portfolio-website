@@ -24,25 +24,36 @@
 }
  .about-me-desctiption{
 	box-sizing: border-box;
+<<<<<<< HEAD
 	float: right;
 	width:380px;
+=======
+	margin-left: 188px;
+>>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 	color: $color;
 
 }
 .about-me-description-item {
 	font-family: "OpenSans";
 	word-break: break-all;
+<<<<<<< HEAD
 	display: inline-block;
 	max-width: 216px;
+=======
+>>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 }
 .about-me-description-list li{
 	line-height: 25px;
 } 
+<<<<<<< HEAD
 .about-me-description-name{
 	display: inline-block;
 	padding-right: 12px;
 	vertical-align: top;
 }
+=======
+
+>>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 .description-me{
 	padding: 32px 42px 32px 42px;
 }
@@ -70,14 +81,22 @@
 	background-position: -40px -10px;
 	width: 54px;
 	height: 55px;
+<<<<<<< HEAD
 	display: inline-block;
+=======
+	display: block;
+>>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 	float: left;
 	margin-right: 40px;
 	margin-top: -5px; 
 }
 .school-icon{
 	@extend .case-icon;
+<<<<<<< HEAD
 	background-position: -257px -10px;
+=======
+	background-position: -252px -10px;
+>>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 }
 .graduate-icon{
 	@extend .case-icon;
@@ -86,6 +105,7 @@
 .file-icon{
 	@extend .case-icon;
 	background-position: -176px -74px;
+<<<<<<< HEAD
 }
 .description-list-name{
 	display: inline-block;
@@ -93,6 +113,14 @@
 }
 .skill{
 	padding-top: 10px;
+=======
+}
+.skill{
+	padding-top: 10px;
+}
+.skill-list-wrap{
+	margin-left: 147px;
+>>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
 }
 .skill-item{
 	background: url(../img/skill.png) repeat-x;
@@ -126,8 +154,24 @@
 		position: relative;
 	} 
 }
+<<<<<<< HEAD
 .skill-list{
 	display: inline-block;
 	padding: 0 10px;
 }
 
+=======
+.skill-list{ 
+	li{
+	display: inline-block;
+	padding: 0 10px;
+}
+}
+.skill-name{
+	float: left;
+	padding-right: 10px;
+}
+.skill-wrap{
+	@include clearfix();
+}
+>>>>>>> 64037017dbd99ecae2dac3f83dff970253b4983a
