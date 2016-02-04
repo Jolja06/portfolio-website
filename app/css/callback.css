@@ -365,20 +365,32 @@ body {
   width: 125px;
   float: left; }
 
-.sprite-locked {
+.locked-wrap {
+  display: inline-block; }
+  .locked-wrap:before, .locked-wrap:after {
+    content: "";
+    display: table; }
+  .locked-wrap:after {
+    clear: both; }
+  .locked-wrap:hover .locked {
+    background-position: -10px -213px; }
+
+.locked {
   width: 24px;
   height: 22px;
   background-image: url(../img/sprit.png);
   background-position: -213px -10px;
   margin-top: 19px;
   float: left; }
-  .sprite-locked:hover {
-    background-position: -10px -213px; }
 
 .log {
   float: left;
-  padding: 21px 0;
-  font-family: "OpenSans-Bold"; }
+  padding: 21px 5px;
+  font-family: "OpenSans-Bold";
+  text-decoration: none;
+  color: #727070; }
+  .log:hover .sprite-locked {
+    background-position: -10px -213px; }
 
 .description {
   padding-top: 27px; }
