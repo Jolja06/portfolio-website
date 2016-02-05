@@ -22,6 +22,7 @@ body {
 	height: $footer;
 }
 .content{
+	@include clearfix();
 	margin: 35px auto;
 }
 .container{

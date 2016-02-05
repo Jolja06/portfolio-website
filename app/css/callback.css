@@ -82,6 +82,11 @@ body {
 
 .content {
   margin: 35px auto; }
+  .content:before, .content:after {
+    content: "";
+    display: table; }
+  .content:after {
+    clear: both; }
 
 .container {
   width: 960px;

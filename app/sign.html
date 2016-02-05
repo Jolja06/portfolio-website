@@ -24,7 +24,7 @@
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
-	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/sign.css">
 	<script src="js/modernizr.js"></script>
 	<!--[if IE 8]>
 		<link rel="stylesheet" href="css/mainie.css">
@@ -34,7 +34,18 @@
 	<div class="wrapper">
 		
 		<div class="content">
-
+			<div class="sign">
+				<span class="sign-title">Авторизуйтесь</span>
+				<div class="sign-wrap">
+					<form action="" class="sing-in">
+						<input type="email" class="sign-item login-in" placeholder="Введите Email" >
+						<input type="password" class="sign-item pass-in"  placeholder="Введите пароль" >
+						<input type="checkbox" class="keep" id="keep-check">
+						<label for="keep-check" class="keep-checkbox">Запомнить меня?</label>
+						<button class="sign-button sign-button-submit">Войти</button>
+					</form>
+				</div>
+			</div>
 		</div>
 		<div class="empty"></div>
 	</div>
