@@ -516,3 +516,124 @@ body {
   background-position: -208px -149px;
   display: block;
   margin: 18px auto; }
+
+.add-project-header {
+  font-family: "OpenSans-Light";
+  font-size: 12px;
+  color: #f8f7f6;
+  padding-left: 22px; }
+
+.add-project {
+  width: 365px;
+  margin: auto; }
+
+.add-project-wrap {
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(top, #f8f7f6 0%, #f0eeed 100%);
+  background: linear-gradient(to bottom, #f8f7f6 0%, #f0eeed 100%);
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  padding: 0 25px 25px;
+  position: relative; }
+
+.project-label {
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #727070;
+  margin: 7px 0; }
+
+.input-item {
+  font-family: "OpenSans-Light";
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  border: 1px solid #d6d4d3;
+  border-radius: 3px;
+  padding: 10px;
+  vertical-align: top;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(top, #fbfcfd 0%, #f3f3f3 100%);
+  background: linear-gradient(to bottom, #fbfcfd 0%, #f3f3f3 100%);
+  text-overflow: ellipsis;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1); }
+  .input-item:focus {
+    outline-color: #cb6945; }
+
+.btn-wrap {
+  margin: auto;
+  width: 116px; }
+
+.input-button {
+  padding: 10px 23px;
+  color: #727070;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  font-family: "OpenSans-Semibold";
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  margin: 15px auto 0 auto;
+  outline: none;
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+  background: -webkit-linear-gradient(top, #fefefd 0%, #e9e6e5 94%, white 100%);
+  background: linear-gradient(to bottom, #fefefd 0%, #e9e6e5 94%, white 100%); }
+  .input-button:hover {
+    box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+    background: -webkit-linear-gradient(bottom, #c2c0c0 0%, #e3e1e1 87%, #e6e4e4 90%, #e8e7e7 100%);
+    background: linear-gradient(to top, #c2c0c0 0%, #e3e1e1 87%, #e6e4e4 90%, #e8e7e7 100%); }
+
+.no-cssgradients .input-button {
+  background: #f1efee; }
+  .no-cssgradients .input-button:hover {
+    background: #d5d3d3; }
+
+.input-button-submit {
+  background: -webkit-linear-gradient(bottom, #43b796 0%, #80e8cb 100%);
+  background: linear-gradient(to top, #43b796 0%, #80e8cb 100%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+  border-top: 1px solid #6adbbc;
+  border-left: #44ac8f;
+  border-right: #44ac8f;
+  border-bottom: #34a282;
+  color: #1e7465; }
+  .input-button-submit:hover {
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+    background: -webkit-linear-gradient(bottom, #3aa087 0%, #5fdcbd 100%);
+    background: linear-gradient(to top, #3aa087 0%, #5fdcbd 100%); }
+
+.no-cssgradients .input-button-submit {
+  background: #61cfb0; }
+  .no-cssgradients .input-button-submit:hover {
+    background: #49b99d; }
+
+.textarea-item {
+  resize: none;
+  width: 100%;
+  height: 110px;
+  overflow: hidden; }
+
+.add-file {
+  overflow: hidden;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  width: 53px;
+  height: 38px; }
+
+.add-file-img {
+  position: absolute;
+  width: 52px;
+  height: 38px;
+  right: 26px;
+  top: 107px;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #fbf9f9 6%, #e9e8e8 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #fbf9f9 6%, #e9e8e8 100%);
+  border-radius: 0 5px 5px 0;
+  border-left: 1px solid #d6d4d3;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1); }
+
+.add-file-image-cloud {
+  background-image: url(../img/iCloud.png);
+  background-position: 13px 8px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 52px;
+  height: 38px; }
