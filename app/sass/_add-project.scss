@@ -8,7 +8,7 @@
 .add-project{
 	width: 365px;
 	margin: auto;
-	//display: none;
+	display: none;
 }
 .add-project-wrap{
 	box-sizing: border-box;
@@ -134,4 +134,5 @@
 	display: block;
 	float: right;
 	margin: -8px -18px 0 0;
+	cursor: pointer;
 }

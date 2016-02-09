@@ -525,7 +525,8 @@ body {
 
 .add-project {
   width: 365px;
-  margin: auto; }
+  margin: auto;
+  display: none; }
 
 .add-project-wrap {
   box-sizing: border-box;
@@ -648,4 +649,5 @@ body {
   height: 14px;
   display: block;
   float: right;
-  margin: -8px -18px 0 0; }
+  margin: -8px -18px 0 0;
+  cursor: pointer; }

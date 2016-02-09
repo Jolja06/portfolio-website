@@ -170,7 +170,7 @@
 									 	<div class="project-wrap">
 									 		<div class="project-item">
 											<div class="project-add">
-												<a href="#"><div class="wrap-img"><i class="project-add-icon"></i></div><span>Добавить проект</span></a>
+												<a href="#" id="popup-add"><div class="wrap-img"><i class="project-add-icon"></i></div><span>Добавить проект</span></a>
 
 											</div>		
 											</div>
@@ -183,10 +183,10 @@
 				</main>
 			</div>
 		</div>
-		<div class="add-project">
+		<div class="add-project" id="add-project">
 			<span class="add-project-header">Добавление проекта</span>
 			<div class="add-project-wrap">
-				<i class="close-btn"></i>
+				<i class="close-btn b-close"></i>
 				<form class="add-project-form">
 					<label for="name-project" class="project-label">Название проекта</label>
 					<input type="text" id="name-project" class="input-item" placeholder="Введите название">
@@ -223,7 +223,8 @@
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:css js/main.js -->
-	<script src="js/main.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/placeholder.js"></script>
 	<!-- endbuild -->
 </body>
 </html>
