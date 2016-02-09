@@ -8,14 +8,19 @@
 .add-project{
 	width: 365px;
 	margin: auto;
+	//display: none;
 }
 .add-project-wrap{
 	box-sizing: border-box;
 	background: linear-gradient( to bottom, #f8f7f6 0%, #f0eeed 100%);
 	border: 1px solid #c5c5c5;
 	border-radius: 5px;
-	padding: 0 25px 25px;
+	padding: 15px 25px 25px;
 	position: relative;
+}
+.no-cssgradients .add-project-wrap{
+	background: #f6f5f4;
+
 }
 .project-label{
 	font-family: "OpenSans";
@@ -106,17 +111,27 @@
 	width: 52px;
 	height: 38px;
 	right: 26px;
-	top: 107px;
+	top: 122px;
 	background: linear-gradient(to bottom,  #ffffff 0%,#fbf9f9 6%,#e9e8e8 100%);
 	border-radius: 0 5px 5px 0;
 	border-left: 1px solid #d6d4d3;
 	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+	cursor: pointer;
 }
 .add-file-image-cloud{
-	background-image: url(../img/iCloud.png) ;
+	background-image: url(../img/iCloud.png);
 	background-position: 13px 8px;
 	background-repeat: no-repeat;
 	display: block;
 	width: 52px;
 	height: 38px;
+}
+
+.close-btn{
+	background-image: url(../img/close.png);
+	width:14px;
+	height: 14px;
+	display: block;
+	float: right;
+	margin: -8px -18px 0 0;
 }
