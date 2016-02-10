@@ -549,6 +549,7 @@ body {
 .input-item {
   font-family: "OpenSans-Light";
   width: 100%;
+  color: #c7c6c6;
   height: 40px;
   font-size: 12px;
   border: 1px solid #d6d4d3;
@@ -556,9 +557,10 @@ body {
   padding: 10px;
   vertical-align: top;
   box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
   background: -webkit-linear-gradient(top, #fbfcfd 0%, #f3f3f3 100%);
   background: linear-gradient(to bottom, #fbfcfd 0%, #f3f3f3 100%);
-  text-overflow: ellipsis;
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1); }
   .input-item:focus {
     outline-color: #cb6945; }
