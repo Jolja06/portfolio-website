@@ -84,7 +84,6 @@ var myModule = (function () {
 		return result;
 
 	}
-
 	// Возвращаем объект (публичные методы) 
 	return {
 		init: init

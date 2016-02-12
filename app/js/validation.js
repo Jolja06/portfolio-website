@@ -47,7 +47,7 @@ var validation = (function () {
 				classes : 'qtip-mystyle qtip-rounded',
 				tip : {
 					hight : 10,
-					width : 16
+					width : 8
 				}
 			}
 		}).trigger('show');

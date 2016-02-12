@@ -526,5 +526,19 @@ body {
   float: right; }
 
 .has-error {
-  outline-color: red;
-  background: pink; }
+  outline-color: #e0ad9a; }
+
+.qtip-mystyle {
+  background: -webkit-linear-gradient(top, #f3a287 10%, #d37654 100%);
+  background: linear-gradient(to bottom, #f3a287 10%, #d37654 100%);
+  border: 1px solid #f19a7c;
+  border-radius: 3px;
+  color: #9a4e32;
+  text-shadow: 0.5px 0.5px 0.2px rgba(255, 255, 255, 0.75); }
+
+.no-cssgradient {
+  background: #e38b6d; }
+
+.qtip-tip {
+  background: -webkit-linear-gradient(top, #f3a287 10%, #d37654 100%);
+  background: linear-gradient(to bottom, #f3a287 10%, #d37654 100%); }
