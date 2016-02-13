@@ -13,7 +13,7 @@ var contactMe = (function () {
 		e.preventDefault();
 
 		var form = $(this),
-			url = 'callback.php',
+			url = 'callback.php'
 			defObj = _ajaxForm(form, url);
 			//что-то будем делать с ответом с сервера defObj
 

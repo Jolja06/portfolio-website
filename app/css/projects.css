@@ -672,8 +672,9 @@ body {
   background: linear-gradient(to bottom, #f3a287 10%, #d37654 100%);
   border: 1px solid #f19a7c;
   border-radius: 3px;
+  font-size: 12px;
   color: #9a4e32;
-  text-shadow: 0.5px 0.5px 0.2px rgba(255, 255, 255, 0.75); }
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45); }
 
 .no-cssgradient {
   background: #e38b6d; }
