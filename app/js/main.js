@@ -8,7 +8,7 @@ var validation = (function(){
 
 	function _setUpListner() {
 		$('form').on('submit', _onSubmit);
-		$('form').on('keydown', '.has-error', _removeError);
+		$('form').on('keydown change', '.has-error', removeError);
 		$('form').on('reset', clearForm);
 
 	}
@@ -56,10 +56,10 @@ var validation = (function(){
 	function _onSubmit (e) {
 		e.preventDefault();
 
-		var form = $(this),
-			btnSubmit = form.find('button[type="submit"]');
+		var $form = $(this),
+			btnSubmit = $form.find('button[type="submit"]');
 
-		if(!validateForm(form)) return false;
+		if(!validateForm($form)) return false;
 
 		btnSubmit.attr('disabled', 'disabled');
 
@@ -68,38 +68,46 @@ var validation = (function(){
 	}
 
 	function validateForm (form) {
-		var elements = form.find('input, textarea').not('input[type="file"]'),
+		var elements = form.find('input, textarea'),
 			valid = true;
 
 		$.each(elements, function (index, val) {
-			var element = $(val),
-				val = element.val(),
-				tooltip = element.attr('qtip-position');
+			var $element = $(val),
+				val = $element.val(),
+				tooltip = $element.attr('qtip-position');
 
-			if(val.length === 0){
-				element.addClass('has-error');
-				_createQtip(element, tooltip)
+			if (val.length === 0){
+				$element.addClass('has-error');
+				_createQtip($element, tooltip);
 				valid = false;
 			} 
+
+			if($element.attr('type') === 'file' && val.length === 0){
+				$('#image-project').addClass('has-error');
+				$('#qtip-1').css('margin-left', '-262px');
+			}
 		});
 
 		return valid;
 	}
 
 	function clearForm () {
-		var form = $(this);
-		form.find('.has-error').removeClass('has-error');
-		form.find('input, textarea').trigger('hideTooltip');
+		var $form = $(this);
+		$form.find('.has-error').removeClass('has-error');
+		$form.find('input, textarea').trigger('hideTooltip');
 	}
 
-	function _removeError () {
-		$(this).removeClass('has-error');
+	function removeError () {
+		$(this).removeClass('has-error').trigger('hideTooltip');
+		$('#image-project').removeClass('has-error');
+
 	}
 
 	return {
 		init : init,
 		validateForm : validateForm,
-		clearForm : clearForm
+		clearForm : clearForm,
+		removeError : removeError
 	}
 
 })();
@@ -114,17 +122,24 @@ var popUp = (function () {
 		$('#popup-add').on('click', _showPopup);
 	}
 
+	/*function _onClose () {
+		var $form = $(this);
+		$form.find('.has-error').removeClass('has-error');
+		$form.find('input, textarea').trigger('hideTooltip');
+		//validation.clearForm();
+	}*/
+
 	function _showPopup (e) {
 		e.preventDefault();
 		
-		var divPopup = $('#add-project');
+		var $popup = $('#add-project');
 
-		divPopup.bPopup({
+		$popup.bPopup({
 			transition : 'slideUp',
 			transitionClose : 'slideDown',
 			speed : 500,
-			follow: [false, false],
-			onClose : validation.clearForm
+			follow: [true, false],
+			onClose : validation.clearForm			
 		});
 
 	}
