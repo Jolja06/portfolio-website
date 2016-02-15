@@ -10,6 +10,7 @@ var validation = (function(){
 		$('form').on('submit', _onSubmit);
 		$('form').on('change keydown', '.has-error', _removeError);
 		$('form').on('reset', clearForm);
+
 	}
 
 	function _createQtip (element, position) {
@@ -89,8 +90,8 @@ var validation = (function(){
 		return valid;
 	}
 
-	function clearForm () {
-		var $form = $(this),
+	function clearForm (_this) {
+		var $form = $(_this),
 			$hasError = $form.find('.has-error'),
 			$elems = $form.find('input, textarea');
 
@@ -100,6 +101,7 @@ var validation = (function(){
 
 	function _removeError () {
 		$(this).removeClass('has-error').trigger('hideTooltip');
+		//$('#image-project').removeClass('has-error');
 	}
 
 	return {
@@ -135,12 +137,8 @@ var popUp = (function () {
 	}
 
 	function _onClose () {
-		var $form = $(this),
-			$hasError = $form.find('.has-error'),
-			$elems = $form.find('input, textarea');
-
-		$hasError.removeClass('has-error');
-		$elems.trigger('hideTooltip');
+		var _this = this;
+		validation.clearForm(_this);
 	}
 
 	return {

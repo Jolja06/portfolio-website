@@ -1,6 +1,6 @@
 ;(function() {
 	$('input[type="file"]').on('change', function(){
 		var fileName = $(this).val().replace(/.+[\\\/]/, "");
-		$('#image-project').html(fileName);
+		$('#image-project-name').html(fileName);
 	});
 })();

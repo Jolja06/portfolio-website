@@ -30,6 +30,7 @@
 
 }
 .input-item{
+	position: relative;
 	font-family: "OpenSans-Light";
 	width: 100%;
 	color: #c7c6c6;
@@ -47,6 +48,12 @@
 	&:focus{
 		outline-color: #cb6945;
 	}
+}
+.input-item-name{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
 }
 .btn-wrap{
 	margin: auto;
@@ -102,9 +109,12 @@
 }
 .add-file{
 	overflow: hidden;
+	position: absolute;
+	left: 0; 
+	top: 0;
 	opacity: 0;
 	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-	width: 53px;
+	width: 100%;
 	height: 38px;
 }
 .add-file-img{
@@ -112,21 +122,25 @@
 	position: absolute;
 	width: 52px;
 	height: 38px;
-	right: 26px;
-	top: 122px;
+	right: 0;
+	top: 0;
 	background: linear-gradient(to bottom,  #ffffff 0%,#fbf9f9 6%,#e9e8e8 100%);
-	border-radius: 0 5px 5px 0;
+	border-radius: 0 3px 3px 0;
 	border-left: 1px solid #d6d4d3;
 	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 	cursor: pointer;
 }
 .add-file-image-cloud{
+	position: absolute;
+	top: 0;
+	right: 0;
 	background-image: url(../img/iCloud.png);
-	background-position: 13px 8px;
+	background-position: 13px 9px;
 	background-repeat: no-repeat;
 	display: block;
 	width: 52px;
 	height: 38px;
+	z-index: 2;
 }
 
 .close-btn{
